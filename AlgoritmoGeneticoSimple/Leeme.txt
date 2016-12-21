@@ -1,0 +1,41 @@
+Algoritmo genetico simple.
+
+Para la materia de Inteligencia Artificial.
+
+DESCRIPCION
+
+Utiliza la tecnica del algoritmo genetico simple, para optimizar 
+el valor maximo de alguna funcion matematica (prueba de aptitud)
+Se inicializa el programa con 3 constantes:
+tP = tamaño de la poblacion la cual debe ser PAR.
+genes = la cantidad de genes que conforman a un individuo.
+        en este ejemplo son arreglos binarios ej. un gen seria [010101].
+probMutacion = es un porcentaje entero (0-100) que indica que probabilidad tiene
+        un hijo de que alguno de sus genes se vea alterado aleatoriamente.
+
+funciones escritas:
+bool converge(Individuo[]);
+    identifica si todos los individuos de la poblacion tienen el mismo valor de aptitud.
+    
+void seleccion(Individuo[], Individuo[]);
+    compara la poblacion inicial con la nueva generacion y buscara nuevos y mejores 
+    individuos(segun su valor de Aptitud) para formar la siguiente poblacion.
+void mutacion(Individuo[]);
+    en base a la probabilidad de mutacion, recorrera el arreglo de hijos (nGeneracion) donde
+    aleatoriamente se decide quien se vera alterado. (un gene en su estructura se vera modificado)
+    ej. [01010101] -> [01010100] <- cambio el ultimo gen
+void cruza(Individuo[],Individuo[]);
+    tomara el arreglo de poblacion inicial y cruzara a todos los elementos, tomando la mitad de genes 
+    de un individuo y para mexclarlo con la mitad de genes de otro individuo, generando dos hijos por 
+    cada dos padres de la poblacion inicial.
+void crearPoblacion(Individuo[]);
+    unicamente llena el arreglo de poblacion inicial con nuevos individuos con un gen aleatorio
+Individuo crearIndividuo(int);
+    crea un nuevo individuo, segun el gen (parametro).
+    genera su arreglo binario y su valor de Aptitud.
+double Aptitud(int);
+    es la formula con la que se evalua a los individuos y definir quien es el mas apto
+int* decToBin(int);
+    funcion que permite convertir un entero a un arreglo de bits. (conversion decimal-binario)
+int binToDec(int[]);
+    funcion que permite convertir un arreglo binario a su valor decimal (conversion binario-decimal).
