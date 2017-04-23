@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Restriccion - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Invitado\CONFIG~1\Temp\RSP2A8.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Restriccion.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Verano2005\Restricciones\Restriccion.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Invitado\CONFIG~1\Temp\RSP2A8.tmp" 
+Creating temporary file "C:\DOCUME~1\Invitado\CONFIG~1\Temp\RSP2A9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Restriccion.pdb" /debug /machine:I386 /out:"Debug/Restriccion.exe" /pdbtype:sept 
+.\Debug\Restriccion.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Invitado\CONFIG~1\Temp\RSP2A9.tmp"
+<h3>Output Window</h3>
+Compiling...
+Restriccion.cpp
+C:\Verano2005\Restricciones\Restriccion.cpp(164) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Verano2005\Restricciones\Restriccion.cpp(167) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Verano2005\Restricciones\Restriccion.cpp(173) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Verano2005\Restricciones\Restriccion.cpp(193) : warning C4101: 'sigue' : unreferenced local variable
+C:\Verano2005\Restricciones\Restriccion.cpp(240) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Verano2005\Restricciones\Restriccion.cpp(215) : warning C4101: 'sigue' : unreferenced local variable
+C:\Verano2005\Restricciones\Restriccion.cpp(263) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Verano2005\Restricciones\Restriccion.cpp(272) : warning C4101: 'i' : unreferenced local variable
+C:\Verano2005\Restricciones\Restriccion.cpp(475) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Verano2005\Restricciones\Restriccion.cpp(489) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+Restriccion.exe - 0 error(s), 10 warning(s)
+</pre>
+</body>
+</html>
